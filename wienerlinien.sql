@@ -27,14 +27,14 @@ CREATE TABLE calendar
   friday            boolean NOT NULL,
   saturday          boolean NOT NULL,
   sunday            boolean NOT NULL,
-  start_date        numeric(8) NOT NULL,
-  end_date          numeric(8) NOT NULL
+  start_date        date NOT NULL,
+  end_date          date NOT NULL
 );
 
 CREATE TABLE calendar_dates
 (
   service_id text NOT NULL,
-  date numeric(8) NOT NULL,
+  date date NOT NULL,
   exception_type integer NOT NULL
 );
 
